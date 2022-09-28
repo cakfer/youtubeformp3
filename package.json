@@ -1,0 +1,23 @@
+{
+  "name": "simple-youtube2mp3",
+  "version": "1.0.0",
+  "description": "A simple YT to MP3 converter written in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XD14/simple-youtube2mp3.git"
+  },
+  "author": "6JX",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XD14/simple-youtube2mp3/issues"
+  },
+  "homepage": "https://github.com/XD14/simple-youtube2mp3#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "youtube-mp3-downloader": "^0.7.10"
+  }
+}

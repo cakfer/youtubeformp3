@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple YouTube to MP3</title>
+    <style>
+        .container {
+          letter-spacing: 0.6px;
+          color: black;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          overflow: auto;
+          height: 100%;
+          justify-content: center;
+          line-height: 0.4;
+          margin: auto;
+          text-align: center;
+          width: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple YouTube to MP3</h1>
+      <form class="dlbar" id="dlbar">
+        <input type="text" autocomplete="off" class="dl" name="dl" id="dl" placeholder="Enter YouTube Link Here.">
+        <button aria-label="Submit" type="submit"><i style="color:black;">Download</i></button>
+      </form>
+      <h2>No Ads. No Spam. No Bullshit.</h2>
+    </div>
+  </body>
+  <script>document.getElementById("dlbar").addEventListener("submit", () => {event.preventDefault(),a=document.getElementById("dl").value,location.assign("/dl/" + a.substr(-11))});</script>
+</html>
